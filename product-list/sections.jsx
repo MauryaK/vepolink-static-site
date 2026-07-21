@@ -51,7 +51,7 @@ const ProductData = () => {
   const data = [
     {
       text: "Water Analyzers",
-      href: "water-analyzer",
+      href: "water-analyzer/index.html",
       image: "assets/images/water-analyzer.png",
       addtext: "Compatible with other sensors",
       children: [
@@ -66,7 +66,7 @@ const ProductData = () => {
     },
     {
       text: "CAAQMS",
-      href: "/caaqms",
+      href: "/caaqms/index.html",
       image: "assets/images/caaqms-banner.png",
       children: [
         {
@@ -80,7 +80,7 @@ const ProductData = () => {
     },
     {
       text: "CEMS",
-      href: "/cems",
+      href: "/cems/index.html",
       image: "assets/images/cems.png",
       children: [
         {
@@ -94,7 +94,7 @@ const ProductData = () => {
     },
     {
       text: "FLOW & LEVEL",
-      href: "/flow-meter",
+      href: "/flow-meter/index.html",
       image: "assets/images/flow-level.png",
       children: [
         {
@@ -108,7 +108,7 @@ const ProductData = () => {
     },
     {
       text: "Gas Detection",
-      href: "/gas-detection",
+      href: "/gas-detection/index.html",
       image: "assets/images/gas-detection.png",
       children: [
         {
@@ -122,7 +122,7 @@ const ProductData = () => {
     },
     {
       text: "Gas Analyzer",
-      href: "/gas-analyzer",
+      href: "/gas-analyzer/index.html",
       image: "assets/images/gas-analyzer.png",
       children: [
         {
@@ -136,7 +136,7 @@ const ProductData = () => {
     },
     {
       text: "NOISE & VIBRATION",
-      href: "/noise-vibration",
+      href: "/noise-vibration/index.html",
       image: "assets/images/noise-vibration.png",
       children: [
         {
@@ -233,8 +233,7 @@ const ProductListFilter = () => {
                           id={String(chi.text)
                             .toLocaleLowerCase()
                             .replaceAll(" ", "_")}
-                          type="checkbox"
-                          value={chi.text}
+
                         />
                       </label>
                     </Reveal>
