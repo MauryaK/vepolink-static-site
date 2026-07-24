@@ -25,24 +25,24 @@ const Listing = () => {
       id: 1,
       img: "/assets/images/gas/single-gas-detector.png",
       link: "/single-gas-detector.html",
-      h: "Portable Single Gas Detector",
+      h: "Reliable single-gas monitoring for enhanced workplace safety and compliance.",
       p: "Portable Single Gas Detector",
     },
     {
       id: 2,
       img: "/assets/images/gas/multi-gas-detector.png",
       link: "/multi-gas-detector.html",
-      h: "Portable Multi Gas Detector",
+      h: "Simultaneous multi-gas detection for comprehensive personal safety monitoring.",
       p: "Portable Multi Gas Detector",
     },
     {
       id: 7,
       img: "/assets/images/gas/fixed-gas-detector.png",
       link: "/fixed-gas-detector.html",
-      h: "Fixed gas detector",
-      p: "Fixed gas detector",
+      h: "Continuous fixed gas monitoring for industrial safety and leak detection.",
+      p: "Fixed Gas Detector",
     },
-  ];
+  ]
   return (
     <div className="py-10 border-t border-(--line)">
       <div className="grid grid-cols-4 gap-5">
@@ -56,7 +56,7 @@ const Listing = () => {
                   <div className="w-full p-4 flex flex-col items-center justify-center min-h-[286px]">
                     <img src={item.img} className="max-h-[254px]" />
                   </div>
-                  <div className="p-3">
+                  <div className="p-3 prod_card_">
                     {/* <div className="text-md font-bold text-(--vilet)">
                       {item.h}
                     </div> */}
@@ -66,6 +66,7 @@ const Listing = () => {
                     >
                       {item.p}
                     </div>
+                    <p className="text-center ">{item.h}</p>
                   </div>
                 </a>
               </div>

@@ -25,31 +25,31 @@ const Listing = () => {
       id: 3,
       img: "/assets/images/gas/extractive-flue-stack-gas-analyzer.png",
       link: "/extractive-flue-stack-gas-analyzer.html",
-      h: "Stack Gas Analyzer",
+      h: "Continuous extractive stack gas monitoring for accurate emission analysis.",
       p: "Extractive Flue / Stack Gas Analyzer",
     },
     {
       id: 4,
       img: "/assets/images/gas/stack-gas-analyzer.png",
       link: "/stack-gas-analyzer.html",
-      h: "Stack Gas Analyzer",
+      h: "Real-time in-situ gas monitoring for continuous emission compliance.",
       p: "In-Situ Flue / Stack Gas Analyzer",
     },
     {
       id: 5,
       img: "/assets/images/gas/stack-gas-analyzer.png",
       link: "/in-situ-tdlas-gas-analyzer.html",
-      h: "TDLAS Gas Analayzer",
-      p: "In situ TDLAS Gas analyzer",
+      h: "High-precision TDLAS technology for continuous industrial gas measurement.",
+      p: "In-Situ TDLAS Gas Analyzer",
     },
     {
       id: 6,
       img: "/assets/images/gas/cross-duct-gas-analyzer.png",
       link: "/in-situ-tdlas-gas-analyzer.html",
-      h: "Cross Duct Gas Analyzer",
+      h: "Cross-duct gas monitoring for reliable multi-gas emission measurement.",
       p: "Cross Duct Gas Analyzer",
     },
-  ];
+  ]
   return (
     <div className="py-10 border-t border-(--line)">
       <div className="grid grid-cols-4 gap-5">
@@ -63,7 +63,7 @@ const Listing = () => {
                   <div className="w-full p-4 flex flex-col items-center justify-center min-h-[286px]">
                     <img src={item.img} className="max-h-[254px]" />
                   </div>
-                  <div className="p-3">
+                  <div className="p-3 prod_card_">
                     {/* <div className="text-md font-bold text-(--vilet)">
                       {item.h}
                     </div> */}
@@ -73,6 +73,7 @@ const Listing = () => {
                     >
                       {item.p}
                     </div>
+                    <p className="text-center ">{item.h}</p>
                   </div>
                 </a>
               </div>

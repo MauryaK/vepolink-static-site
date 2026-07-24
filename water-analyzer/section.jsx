@@ -121,107 +121,105 @@ const HeroSection = () => {
 const AppListing = () => {
   const data = [
     {
-      text: "Water Analyzers",
+      text: "Continuous pH measurement for reliable water quality monitoring.",
       parameter: ["pH Analog"],
       href: "product-detail.html?slug=water-analyzer",
       image: "/assets/images/img003.png",
       datasheet: "/water-analyzer.pdf",
     },
     {
-      text: "Water Analyzers",
+      text: "Accurate ORP monitoring for effective oxidation-reduction process control.",
       parameter: ["ORP Analog"],
       href: "product-detail.html?slug=water-analyzer",
       image: "/assets/images/img003.png",
       datasheet: "/water-analyzer.pdf",
     },
     {
-      text: "Water Analyzers",
+      text: "Continuous electrical conductivity monitoring for water quality analysis.",
       parameter: ["EC Analog"],
       href: "product-detail.html?slug=water-analyzer",
       image: "/assets/images/img003.png",
       datasheet: "/water-analyzer.pdf",
     },
     {
-      text: "Water Analyzers",
+      text: "High-precision digital pH monitoring for industrial water applications.",
       parameter: ["pH Digital"],
       href: "product-detail.html?slug=water-analyzer",
       image: "/assets/images/imgpH.png",
       datasheet: "/water-analyzer.pdf",
     },
     {
-      text: "Water Analyzers",
+      text: "Real-time digital conductivity measurement for precise process monitoring.",
       parameter: ["EC Digital"],
       href: "product-detail.html?slug=water-analyzer",
       image: "/assets/images/imgpH.png",
       datasheet: "/water-analyzer.pdf",
     },
     {
-      text: "Water Analyzers",
+      text: "Optical dissolved oxygen monitoring for accurate and maintenance-free measurement.",
       parameter: ["Optical Dissolved Oxygen (ODO)"],
       href: "product-detail.html?slug=water-analyzer",
       image: "/assets/images/img009.png",
       datasheet: "/water-analyzer.pdf",
     },
-
     {
-      text: "Water Analyzers",
+      text: "Reliable residual chlorine monitoring for safe water disinfection control.",
       parameter: ["Residual Chlorine Sensor (RCL)"],
       href: "product-detail.html?slug=water-analyzer",
       image: "/assets/images/imgpH.png",
       datasheet: "/water-analyzer.pdf",
     },
     {
-      text: "Water Analyzers",
+      text: "Continuous UV COD measurement for efficient organic pollution monitoring.",
       parameter: ["UV COD"],
       href: "product-detail.html?slug=water-analyzer",
       image: "/assets/images/imgpH.png",
       datasheet: "/water-analyzer.pdf",
     },
-
     {
-      text: "Water Analyzers",
+      text: "Accurate suspended solids monitoring for wastewater and sludge management.",
       parameter: ["Suspended Solids/Sludge (SS)"],
       href: "product-detail.html?slug=water-analyzer",
       image: "/assets/images/img014.png",
       datasheet: "/water-analyzer.pdf",
     },
     {
-      text: "Water Analyzers",
+      text: "Real-time chlorophyll monitoring for aquatic ecosystem and algae analysis.",
       parameter: ["Chlorophyll (CPHL)"],
       href: "product-detail.html?slug=water-analyzer",
       image: "/assets/images/img016.png",
       datasheet: "/water-analyzer.pdf",
     },
     {
-      text: "Water Analyzers",
+      text: "Continuous turbidity monitoring for accurate water clarity assessment.",
       parameter: ["Turbidity"],
       href: "product-detail.html?slug=water-analyzer",
       image: "/assets/images/img014.png",
       datasheet: "/water-analyzer.pdf",
     },
     {
-      text: "Water Analyzers",
+      text: "Monitor blue-green algae levels for improved water quality management.",
       parameter: ["Blue Green Algae (BGA)"],
       href: "product-detail.html?slug=water-analyzer",
       image: "/assets/images/img016.png",
       datasheet: "/water-analyzer.pdf",
     },
     {
-      text: "Water Analyzers",
+      text: "Continuous oil-in-water monitoring for environmental compliance and protection.",
       parameter: ["Oil in Water (OIW)"],
       href: "product-detail.html?slug=water-analyzer",
       image: "/assets/images/img018.png",
       datasheet: "/water-analyzer.pdf",
     },
     {
-      text: "Water Analyzers",
+      text: "Accurate ammonia nitrogen monitoring for wastewater treatment optimization.",
       parameter: ["Ammonia Nitrogen (NH4N)"],
       href: "product-detail.html?slug=water-analyzer",
       image: "/assets/images/img019.png",
       datasheet: "/water-analyzer.pdf",
     },
     {
-      text: "Water Analyzers",
+      text: "Real-time nitrate nitrogen measurement for nutrient and water quality analysis.",
       parameter: ["Nitrate Nitrogen (NO3N)"],
       href: "product-detail.html?slug=water-analyzer",
       image: "/assets/images/imgnon3.png",
@@ -307,42 +305,33 @@ const AppListing = () => {
         <div className="mb-13">
           <h2>Compatible with Sensor Probes.</h2>
         </div>
-        <div className="grid grid-cols-5 gap-2">
-          {data.map((list, i) => (
-            <div
-              key={i}
-              className="prod_list max-w-full col-span-1 bg-white border border-(--line-2) rounded-[10px] overflow-hidden"
-            >
-              <a
-                href={list.href}
-                className="block w-full relative overflow-hidden h-full"
-              >
-                <div className="w-full">
-                  <div className="img-place w-full min-h-[280px]  bg-white flex flex-row items-center justify-center">
-                    <img
-                      src={list.image}
-                      className="w-auto max-h-[250px] mix-blend-darken"
-                    />
-                  </div>
-                  <div className="produ_name p-3 z-2 overflow-hidden">
-                    {list.parameter.length > 0 &&
-                      list.parameter.map((p, i) => (
+        <div className="py-10 border-t border-(--line)">
+          <div className="grid grid-cols-4 gap-5">
+            {data &&
+              data.map((item) => (
+                <div key={item.id} className="col-span-1 h-full">
+                  <div className="rounded border border-(--line) h-full">
+                    <a href={item.href} className="block p-3 ">
+                      <div className="w-full p-4 flex flex-col items-center justify-center min-h-[286px]">
+                        <img src={item.image} className="max-h-[254px]" style={{ mixBlendMode: "multiply" }} />
+                      </div>
+                      <div className="p-3 prod_card_">
+                        {/* <div className="text-md font-bold text-(--vilet)">
+                      {item.h}
+                    </div> */}
                         <div
-                          key={i}
-                          className="font-bold text-base text-center"
+                          title={item.parameter.join(", ")}
+                          className="text-md font-medium text-(--muted-2-) text-center"
                         >
-                          {p}
+                          {item.parameter.join(", ")}
                         </div>
-                      ))}
-                    <div className="btn_det px-3 py-2 border mt-6 border-( --muted-2) text-center rounded-full">
-                      View Detail
-                    </div>
+                        <p className="text-center ">{item.text}</p>
+                      </div>
+                    </a>
                   </div>
-                  <div className="hover_overlay"></div>
                 </div>
-              </a>
-            </div>
-          ))}
+              ))}
+          </div>
         </div>
       </div>
     </div>

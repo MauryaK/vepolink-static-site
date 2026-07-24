@@ -3447,3 +3447,26 @@ h2 {
 .prod_list a:hover .produ_name .text-base {
   color: var(--card);
 }
+
+.prod_card_>div {
+  position: relative;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+.prod_card_>div:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50px;
+  transform: translateX(-50%);
+  height: 3px;
+  background: var(--cyan);
+  border-radius: 10px;
+}
+
+.prod_card_>p {
+  color: var(--muted);
+  font-size: 14px;
+}

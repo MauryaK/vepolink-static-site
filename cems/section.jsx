@@ -27,21 +27,21 @@ const Listing = () => {
       id: 2,
       img: "/assets/images/caaqms/PM10_630_450.png",
       link: "/PM10_630_450.html",
-      h: "PM 10",
-      p: "PM 10 (CEMS)",
+      h: "Continuous Monitoring of particulate matter (PM10) in stack emissions.",
+      p: "PM10 Monitor (CEMS)",
     },
     {
       id: 3,
       img: "/assets/images/caaqms/ambient-so2-gas-analyzer.png",
       link: "/ambient-so2-gas-analyzer.html",
-      h: "Ambient SO2 Gas Analyzer",
+      h: "Accurate measurement of sulfur dioxide (SO2) in flue gas emissions.",
       p: "SO2 Gas Analyzer (CEMS)",
     },
     {
       id: 4,
       img: "/assets/images/caaqms/ambient-nox-gas-analyzer.png",
       link: "/ambient-nox-gas-analyzer.html",
-      h: "NOx Analyzer",
+      h: "Continuous monitoring of nitrogen oxides (NOx) in stack emissions.",
       p: "NOx Analyzer (CEMS)",
     },
   ];
@@ -56,7 +56,7 @@ const Listing = () => {
                   <div className="w-full p-4 flex flex-col items-center justify-center min-h-[286px]">
                     <img src={item.img} className="max-h-[254px]" />
                   </div>
-                  <div className="p-3">
+                  <div className="p-3 prod_card_">
                     {/* <div className="text-md font-bold text-(--vilet)">
                       {item.h}
                     </div> */}
@@ -66,6 +66,7 @@ const Listing = () => {
                     >
                       {item.p}
                     </div>
+                    <p className="text-center ">{item.h}</p>
                   </div>
                 </a>
               </div>

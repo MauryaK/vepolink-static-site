@@ -27,45 +27,45 @@ const Listing = () => {
       id: 1,
       img: "/assets/images/flow/Electromagnetic Flowmeter – Inline.png",
       link: "/electromagnetic-flowmeter.html",
-      h: "Flow Meter",
-      p: "Electromagnetic Flowmeter – Inline ",
+      h: "High-accuracy inline flow measurement for conductive liquid applications.",
+      p: "Electromagnetic Flowmeter – Inline",
     },
     {
       id: 2,
       img: "/assets/images/flow/Electromagnetic Flowmeter – Insertion Type.png",
       link: "/electromagnetic-flowmeter.html",
-      h: "Flow Meter",
+      h: "Cost-effective insertion flow measurement for large pipeline systems.",
       p: "Electromagnetic Flowmeter – Insertion Type",
     },
     {
       id: 3,
       img: "/assets/images/flow/Ultrasonic Flowmeter – Non Contact Type Sitrans Probe lu.png",
       link: "/electromagnetic-flowmeter.html",
-      h: "Flow Meter",
-      p: "Ultrasonic Flowmeter – Non Contact Type Sitrans Probe lu",
+      h: "Non-contact ultrasonic flow monitoring for open channel applications.",
+      p: "Ultrasonic Flowmeter – Non Contact Type Sitrans Probe LU",
     },
     {
       id: 4,
       img: "/assets/images/flow/Ultrasonic Flowmeter – Inline.png",
       link: "/electromagnetic-flowmeter.html",
-      h: "Flow Meter",
+      h: "Precision inline ultrasonic flow measurement with maintenance-free operation.",
       p: "Ultrasonic Flowmeter – Inline",
     },
     {
       id: 5,
       img: "/assets/images/flow/Ultrasonic Flowmeter – Clamp On.png",
       link: "/electromagnetic-flowmeter.html",
-      h: "Flow Meter",
+      h: "Clamp-on ultrasonic flow measurement without pipe cutting or shutdown.",
       p: "Ultrasonic Flowmeter – Clamp On",
     },
     {
       id: 6,
       img: "/assets/images/flow/Ultrasonic Non-Contact Type (Sonic Intelligence).png",
       link: "/electromagnetic-flowmeter.html",
-      h: "Flow Meter",
+      h: "Advanced non-contact level and flow monitoring using sonic intelligence.",
       p: "Ultrasonic Non-Contact Type (Sonic Intelligence)",
     },
-  ];
+  ]
   return (
     <div className="py-10 border-t border-(--line)">
       <div className="grid grid-cols-4 gap-5">
@@ -79,16 +79,17 @@ const Listing = () => {
                   <div className="w-full p-4 flex flex-col items-center justify-center min-h-[286px]">
                     <img src={item.img} className="max-h-[254px]" />
                   </div>
-                  <div className="p-3">
-                    {/* <div className="text-md font-bold text-(--vilet) --ink-2  text-overflow">
+                  <div className="p-3 prod_card_">
+                    {/* <div className="text-md font-bold text-(--vilet)">
                       {item.h}
                     </div> */}
                     <div
                       title={item.p}
-                      className="text-md font-medium text-(--ink-3) text-center"
+                      className="text-md font-medium text-(--muted-2-) text-center"
                     >
                       {item.p}
                     </div>
+                    <p className="text-center ">{item.h}</p>
                   </div>
                 </a>
               </div>

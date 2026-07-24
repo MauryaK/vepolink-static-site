@@ -28,17 +28,17 @@ const Listing = () => {
       id: 1,
       img: "/assets/images/noise/iDB.png",
       link: "/idb.html",
-      h: "NOISE Monitor iDB",
+      h: "Continuous environmental noise monitoring for regulatory compliance and analysis.",
       p: "NOISE Monitor iDB",
     },
     {
       id: 2,
       img: "/assets/images/noise/iVIBEseismic.png",
       link: "/ivi-beseismic",
-      h: "VIBRATION Monitor iVIBE",
+      h: "Accurate vibration monitoring for structural safety and industrial applications.",
       p: "VIBRATION Monitor iVIBE",
     },
-  ];
+  ]
   return (
     <div className="py-10 border-t border-(--line)">
       <div className="grid grid-cols-4 gap-5">
@@ -52,16 +52,17 @@ const Listing = () => {
                   <div className="w-full p-4 flex flex-col items-center justify-center min-h-[286px]">
                     <img src={item.img} className="max-h-[254px]" />
                   </div>
-                  <div className="p-3">
-                    {/* <div className="text-md font-bold text-(--vilet) --ink-2  text-overflow">
+                  <div className="p-3 prod_card_">
+                    {/* <div className="text-md font-bold text-(--vilet)">
                       {item.h}
                     </div> */}
                     <div
                       title={item.p}
-                      className="text-md font-medium text-(--ink-3) text-center"
+                      className="text-md font-medium text-(--muted-2-) text-center"
                     >
                       {item.p}
                     </div>
+                    <p className="text-center ">{item.h}</p>
                   </div>
                 </a>
               </div>
