@@ -53,13 +53,13 @@ const HeroSection = () => {
     <div className="w-full py-15 bg-(--card) rounded border border-(--line)">
       <div className="shell">
         <div className="flex flex-col md:flex-row gap-10 md:gap-8 lg:gap-12 items-center">
-          <div className="w-[35%] flex justify-center items-center">
+          <div className="w-full md:w-[35%] flex justify-center items-center">
             <div className="w-full flex flex-row items-center justify-center">
               <img src="/assets/images/prod_1.png" className="max-w-[300px]" />
             </div>
           </div>
-          <div className="w-[65%]">
-            <div className="p-5 w-[80%] ml-auto mr-0">
+          <div className="w-full md:w-[65%]">
+            <div className="p-5 w-full md:w-[80%] ml-auto mr-auto md:mr-0">
               <Reveal delay={120 * 1}>
                 <h1
                   style={{
@@ -306,7 +306,7 @@ const AppListing = () => {
           <h2>Compatible with Sensor Probes.</h2>
         </div>
         <div className="py-10 border-t border-(--line)">
-          <div className="grid grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
             {data &&
               data.map((item) => (
                 <div key={item.id} className="col-span-1 h-full">

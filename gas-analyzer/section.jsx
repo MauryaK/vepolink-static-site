@@ -52,7 +52,7 @@ const Listing = () => {
   ]
   return (
     <div className="py-10 border-t border-(--line)">
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {data && data.length === 0 ? (
           <div className="card text-center col-span-4">No Record Found</div>
         ) : (

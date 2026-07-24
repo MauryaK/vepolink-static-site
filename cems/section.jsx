@@ -47,7 +47,7 @@ const Listing = () => {
   ];
   return (
     <div className="py-10 border-t border-(--line)">
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {data &&
           data.map((item) => (
             <div key={item.id} className="col-span-1 h-full">

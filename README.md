@@ -59,3 +59,12 @@ Using the local server is preferred because it behaves closer to production.
 ## Deploy Notes
 
 Upload the project files as static assets. Make sure the deploy platform applies the headers in `_headers`, especially the Content Security Policy and `frame-ancestors` directive.
+
+## Plroduct List 
+1.https://vepolink-static-site.vercel.app/caaqms/index.html
+2.https://vepolink-static-site.vercel.app/gas-detection/index.html
+3.https://vepolink-static-site.vercel.app/gas-analyzer/index.html
+4.https://vepolink-static-site.vercel.app/water-analyzer/index.html
+5.https://vepolink-static-site.vercel.app/cems/index.html
+6.https://vepolink-static-site.vercel.app/flow-meter/index.html
+7.https://vepolink-static-site.vercel.app/noise-vibration/index.html
